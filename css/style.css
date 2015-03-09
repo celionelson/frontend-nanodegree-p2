@@ -4,6 +4,18 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/*Polymer side Nav*/
+body {
+  font-family: sans-serif;
+}
+#navheader {
+  background-color: #56ba89;
+}
+.content {
+  padding: 20px;
+}
+/*...*/
+
 .clearfix {
   overflow: auto;
 }
@@ -45,6 +57,7 @@ h4 {
 h2, h3, h4, h5 {
   padding: 10px 5%;
 }
+
 
 
 .date-text {
@@ -104,7 +117,7 @@ a {
 }
 
 .gray {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   padding: 0 0 10px 0;
   clear:both;
 }

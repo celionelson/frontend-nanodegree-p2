@@ -7,7 +7,7 @@ var bio = {
 		"github" : "celionelson",
 		"linkedin" : "<a href='https://www.linkedin.com/pub/celio-nelson/54/689/4b0/fr'>my profile</a>",
 		"location" : "San Francisco, CA"},
-	"bioPic" : "images/bioPic.png",
+	"bioPic" : "images/bioPic-test.png",
 	"welcomeMsg" : "Welcome there !",
 	"skills" : ["project management", "administration", "logistics", "buildings automation", "programming"]
  };
