@@ -8,7 +8,7 @@ var bio = {
 		"linkedin" : "https://www.linkedin.com/pub/celio-nelson/54/689/4b0/fr",
 		"location" : "San Francisco, CA"},
 	"bioPic" : "images/bioPic2.png",
-	"welcomeMsg" : "Welcome there !mckimcccccckcnwcnklwnljvkwbc;nw;enjwnclkwnjklwklcnlwnjwknklwnlkwnlenwlkjenjwkencjwkbnekjncljwncjkwnjw  wencjlwecw ecwn ecjw ecwn eclwnec jwke cwe clwkeownwo;ejwe; wi w;o wi weic ;winow ;nw",
+	"welcomeMsg" : "Hi and Welcome on my 'Web Resume'!, <br> This webpage is my second project with Udacity's Front End Web Dev Nanodegree and I'm very excited about it!",
 	"skills" : ["project management", "administration", "logistics", "buildings automation", "programming"]
  };
 
