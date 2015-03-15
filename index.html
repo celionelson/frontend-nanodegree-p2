@@ -9,9 +9,9 @@
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
     <meta name="viewport" content="width=device-width">
 
-    <!-- Polymer side Nav -->
+    <!-- Polymer Project HTML Imports -->
     <script 
-      src="/bower_components/webcomponents.js">
+      src="/bower_components/webcomponentsjs/webcomponents.min.js">
     </script>
     <link rel="import" 
       href="/bower_components/core-toolbar/core-toolbar.html">
@@ -25,6 +25,17 @@
       href="/bower_components/core-drawer-panel/core-drawer-panel.html">
     <link rel="import" 
       href="/bower_components/core-scaffold/core-scaffold.html">
+    <link rel="import" 
+      href="/bower_components/core-image/core-image.html">
+    <link rel="import" 
+      href="/bower_components/core-tooltip/core-tooltip.html">
+    <link rel="import" 
+      href="/bower_components/core-overlay/core-overlay.html">
+    <!-- ... -->
+
+    <!-- Fonts import -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400,300,700' rel='stylesheet' 
+    type='text/css'>
     <!-- ... -->
 
   </head>
@@ -33,63 +44,150 @@
 
     <!-- Polymer side Nav -->
 
-    <core-scaffold>
+    <core-scaffold mode="waterfall">
 
       <core-header-panel navigation flex>
 
-        <core-toolbar id="navheader">
+        <core-toolbar id="navheader" class="medium-tall">
 
-          <span>Menu</span>
+          <div id="navheaderTopContent" horizontal center-justified layout 
+            class="top">
+
+            <!-- MOVED TO HELPER.JS -->
+            <!-- <img id="bioPic" src="images/bioPic2.png"> -->
+          
+          </div>
+
+          <div id="navheaderBottomContent" horizontal center-justified layout 
+            class="bottom">
+            
+            <!-- MOVED TO HELPER.JS -->
+            <!-- <core-tooltip>
+              
+              <core-icon-button class="icons" 
+                src="images/iconPhoneTalk-128x128.png"></core-icon-button>
+              
+              <div tip>Call me at :</div>
+
+            </core-tooltip>
+
+            <span flex></span> -->
+
+            <!-- <core-tooltip>
+
+              <core-icon-button class="icons" 
+                src="images/iconEmailHand-128x128.png"></core-icon-button>
+              
+              <div tip>My email</div>
+
+            </core-tooltip>
+
+            <span flex></span> -->
+            
+            <!-- <core-tooltip>
+
+              <core-icon-button class="icons" 
+                src="images/iconLinkedinHand-128x128.png" onclick="window.open('http://www.linkedin.com', '_blank');"></core-icon-button>
+                
+              <div tip>Connect with me on LinkedIn</div>
+
+            </core-tooltip>
+
+            <span flex></span> -->
+            
+            <!-- <core-tooltip>
+
+              <core-icon-button class="icons" 
+                src="images/iconGitHubHand-128x128.png" onclick="window.open('mailto:celio.nelson@icloud.com');"></core-icon-button>
+                
+              <div tip>My GitHub</div>
+
+            </core-tooltip>
+
+            <span flex></span> -->
+
+            <!-- <core-tooltip>
+
+              <core-icon-button class="icons" 
+                src="images/iconLocationHand-128x128.png"></core-icon-button>
+                
+              <div tip>Location</div>
+
+            </core-tooltip>
+
+            <span flex></span> -->
+
+          </div>
+
+            <!-- <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div> -->
+            <!-- <div flex>-->
 
         </core-toolbar>
 
-        <core-menu>
+        <core-menu id="navmenuContent">
 
-          <core-item>
+          <!-- MOVED TO HELPER.JS -->
+          <!-- <core-item class="menuItems">
             <a href="#workExperience">Work Experience</a>
-          </core-item>
+          </core-item> -->
 
-          <core-item>
+          <!-- <core-item class="menuItems">
             <a href="#projects">Projects</a>
-          </core-item>
+          </core-item> -->
 
-          <core-item>
+          <!-- <core-item class="menuItems">
             <a href="#education">Education</a>
-          </core-item>
+          </core-item> -->
 
-          <core-item>
+          <!-- <core-item class="menuItems">
             <a href="#mapDiv">Where I Lived and Worked</a>
-          </core-item>
+          </core-item> -->
           
         </core-menu>
 
       </core-header-panel>
       
-      <span tool>Title</span>
+      <div id="mainheaderContent" tool>
+        
+        <!-- MOVED TO HELPER.JS -->
+        <!-- <header>Celio Nelson</header>
+        
+        <div>Project Manager / Administrator / Learning Web Developer</div> -->
+        
+      </div>
 
       <div class="content">
+
           <div id="main">
-            <div tool id="header" class="center-content clearfix">
-              <ul id="topContacts" class='flex-box'></ul>
+
+            <div id="home">
+
             </div>
-            <div style='clear: both;'></div>
-            <div id="workExperience" class='gray'>
-              <h2>Work Experience</h2>
+
+            <div id="workExperience" class="">
+            
+              <h1>Work Experience</h1>
+            
             </div>
-            <div id="projects">
-              <h2>Projects</h2>
+            
+            <div id="projects" class="">
+            
+              <h1>Projects</h1>
+            
             </div>
-            <div id="education" class='gray'>
-              <h2>Education</h2>
+            
+            <div id="education" class="">
+            
+              <h1>Education</h1>
+            
             </div>
-            <div id="mapDiv">
-              <h2>Where I've Lived and Worked</h2>
+            
+            <div id="mapDiv" class="">
+            
+              <h1>Where I've Lived and Worked</h1>
+            
             </div>
-            <div id="letsConnect" class='dark-gray'>
-              <h2 class='orange center-text'>Let's Connect</h2>
-                <ul id="footerContacts" class="flex-box">
-              </ul>
-            </div>
+  
           </div>
       </div>
 
@@ -98,28 +196,19 @@
     <script src="js/resumeBuilder.js"></script>
 
     <script type="text/javascript">
-
-      if(document.getElementsByClassName('flex-item').length === 0) {
-        document.getElementById('topContacts').style.backgroundColor = "black";
-      }
-      if(document.getElementsByTagName('h1').length === 0) {
-        document.getElementById('header').style.backgroundColor = "black";
-      }
       if(document.getElementsByClassName('work-entry').length === 0) {
-        document.getElementById('workExperience').style.backgroundColor = "black";
+        $('#workExperience').addClass('hidden');
       }
       if(document.getElementsByClassName('project-entry').length === 0) {
-        document.getElementById('projects').style.backgroundColor = "black";
+        $('#projects').addClass('hidden');
       }
       if(document.getElementsByClassName('education-entry').length === 0) {
-        document.getElementById('education').style.backgroundColor = "black";
-      }
-      if(document.getElementsByClassName('flex-item').length === 0) {
-        document.getElementById('letsConnect').style.backgroundColor = "black";
+        $('#education').addClass('hidden');
       }
       if(document.getElementById('map') === null) {
-        document.getElementById('mapDiv').style.backgroundColor = "black";
+        $('#mapDiv').addClass('hidden');
       }
     </script>
+
   </body>
 </html>

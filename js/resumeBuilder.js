@@ -2,13 +2,13 @@ var bio = {
 	"name" : "Celio Nelson",
 	"role" : "Administrator / Project Manager / Learning Web Developer",
 	"contacts" : {
-		"mobile" : "+336 4740 7660",
-		"email" : "celio.nelson@icloud.com",
+		"mobile" : "+33647407660",
+		"email" : "celio.nelson@gmail.com",
 		"github" : "celionelson",
-		"linkedin" : "<a href='https://www.linkedin.com/pub/celio-nelson/54/689/4b0/fr'>my profile</a>",
+		"linkedin" : "https://www.linkedin.com/pub/celio-nelson/54/689/4b0/fr",
 		"location" : "San Francisco, CA"},
-	"bioPic" : "images/bioPic-test.png",
-	"welcomeMsg" : "Welcome there !",
+	"bioPic" : "images/bioPic2.png",
+	"welcomeMsg" : "Welcome there !mckimcccccckcnwcnklwnljvkwbc;nw;enjwnclkwnjklwklcnlwnjwknklwnlkwnlenwlkjenjwkencjwkbnekjncljwncjkwnjw  wencjlwecw ecwn ecjw ecwn eclwnec jwke cwe clwkeownwo;ejwe; wi w;o wi weic ;winow ;nw",
 	"skills" : ["project management", "administration", "logistics", "buildings automation", "programming"]
  };
 
@@ -16,40 +16,36 @@ bio.display = function() {
 
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+	var formattedMobile = HTMLmobile.replace(/%data%/g, bio.contacts.mobile);
+	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
 	var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin)
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 	var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 	var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMsg);
 
-	$("#topContacts").prepend(formattedLocation);
-	// $("#topContacts").prepend(formattedLinkedin);
-	$("#topContacts").prepend(formattedGithub);
-	$("#topContacts").prepend(formattedEmail);
-	$("#topContacts").prepend(formattedMobile);
-	$("#header").prepend(formattedRole);
-	$("#header").prepend(formattedName);
-	$("#header").append(formattedBioPic);
-	$("#header").append(formattedWelcomeMsg);
+	$("#navheaderTopContent").append(formattedBioPic);
+	$("#navheaderBottomContent").prepend(formattedLocation);
+	$("#navheaderBottomContent").prepend(formattedGithub);
+	$("#navheaderBottomContent").prepend(formattedLinkedin);
+	$("#navheaderBottomContent").prepend(formattedEmail);
+	$("#navheaderBottomContent").prepend(formattedMobile);
+	$("#mainheaderContent").prepend(formattedRole);
+	$("#mainheaderContent").prepend(formattedName);
+	$("#navmenuContent").append(HTMLhomeMenu);
+	
+	$("#home").append(formattedWelcomeMsg);
 
 	if(bio.skills.length > 0) {
-
-		$("#header").append(HTMLskillsStart);
+		
+		$("#home").append(HTMLskillsStart);
 
 		for(skill in bio.skills) {
 
 			var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
-			$("#header").append(formattedSkill);
+			$("#home").append(formattedSkill);
 		}
 	};
-
-	$("#footerContacts").append(formattedMobile);
-	$("#footerContacts").append(formattedEmail);
-	$("#footerContacts").append(formattedGithub);
-	// $("#footerContacts").append(formattedLinkedin);
-	$("#footerContacts").append(formattedLocation);
 };
 
 bio.display();
@@ -84,7 +80,9 @@ var work = {
 };
 
 work.display = function () {
-		
+	
+	$("#navmenuContent").append(HTMLworkMenu);
+
 	for(job in work.jobs) {
 
 		$("#workExperience").append(HTMLworkStart);
@@ -180,6 +178,8 @@ var education = {
 
 education.displaySchool = function () {
 
+	$("#navmenuContent").append(HTMLeducationMenu);
+
 	for(school in education.schools) {
 
 		$("#education").append(HTMLschoolStart);
@@ -207,6 +207,10 @@ if(education.schools.length > 0) {
 };
 
 education.displayOnline = function () {
+
+	if(education.schools.length === 0) {
+		$("#navmenuContent").append(HTMLeducationMenu);
+	}
 
 	$("#education").append(HTMLonlineClasses);
 	
@@ -248,6 +252,8 @@ var projects = {
 
 projects.display = function () {
 
+	$("#navmenuContent").append(HTMLprojectMenu);
+
 	for(project in projects.projects) {
 
 		$("#projects").append(HTMLprojectStart);
@@ -273,4 +279,5 @@ if(projects.projects.length > 0) {
 
 //$("#main").append(internationalizeButton);
 
+$("#navmenuContent").append(HTMLmapMenu);
 $("#mapDiv").append(googleMap);

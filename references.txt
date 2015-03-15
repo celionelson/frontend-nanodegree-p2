@@ -4,3 +4,7 @@ https://css-tricks.com/remember-the-order-of-marginpadding-shorthand-with-troubl
 
 https://www.polymer-project.org
 
+http://stackoverflow.com/
+
+http://www.w3schools.com/
+
