@@ -27,7 +27,7 @@ var HTMLWelcomeMsg = '<p class="welcome-message">%data%</p>';
 
 var HTMLhomeMenu = '<core-item class="menuItems"><a href="#home">Home</a></core-item>';
 
-var HTMLskillsStart = '<h1>Skills at a Glance:</h1><ul id="skills" class="flex-box"></ul>';
+var HTMLskillsStart = '<h1>Skills at a Glance:</h1><ul></ul>';
 var HTMLskills = '<li>%data%</li>';
 
 var HTMLworkMenu = '<core-item class="menuItems"><a href="#workExperience">Work Experience</a></core-item>';
