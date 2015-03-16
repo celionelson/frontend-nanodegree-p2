@@ -20,7 +20,7 @@ bio.display = function() {
 	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
 	var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin)
-	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+	var formattedLocation = HTMLlocation.replace(/%data%/g, bio.contacts.location);
 	var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 	var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMsg);
 

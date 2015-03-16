@@ -1,6 +1,4 @@
 * {
-  padding:0;
-  margin:0;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -95,6 +93,25 @@ li {
   font-weight: 400;
 }
 
+.dialog {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  overflow: hidden;
+  background-color: #56ba89;
+  padding:30px 42px;
+  outline: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.authors {
+  font-size: 30%;
+  font-weight: 300;
+  display: inline;
+  padding: 20% 0 0 0;
+}
+
 #name {
   font-size: 100%;
   font-weight: 700;
@@ -119,6 +136,10 @@ li {
 
 #home {
   padding-top: 2%;
+}
+
+#popupImg {
+  margin-bottom: 20%;
 }
 
 #map {

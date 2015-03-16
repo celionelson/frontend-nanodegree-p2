@@ -31,6 +31,8 @@
       href="/bower_components/core-tooltip/core-tooltip.html">
     <link rel="import" 
       href="/bower_components/core-overlay/core-overlay.html">
+    <link rel="import" 
+      href="/bower_components/core-transition/core-transition.html">
     <!-- ... -->
 
     <!-- Fonts import -->
@@ -124,9 +126,42 @@
 
     </core-scaffold>
 
+    <core-overlay id="popup" class="dialog" backdrop transition="core-transition-top">
+
+        <core-image id="popupImg" horizontal center-justified layout src="">
+          </core-image>
+
+        <h2 id="popupTitle" horizontal center-justified layout>
+
+          <!-- Content added by function togglePopup() -->
+
+        </h2>
+        
+        <br>
+
+        <div id="popupButtons" horizontal around-justified layout>
+
+          <!-- Content added by function togglePopup() -->
+
+        </div>
+
+        <br>
+      
+        <div class="authors" horizontal center-justified layout>
+          <a href="http://www.flaticon.com/authors/freepik">Icons made by Freepik</a>
+        </div>
+
+    </core-overlay>
+
     <script src="js/resumeBuilder.js"></script>
 
     <script type="text/javascript">
+      function togglePopup(title,data,imgsrc,link) {
+        document.getElementById('popupImg').src = imgsrc;
+        document.getElementById('popupTitle').innerHTML = title+ "<br>" +data;
+        document.getElementById('popupButtons').innerHTML = "<button onclick='window.open(&quot;"+link+"&quot;);' core-overlay-toggle>Ok</button><button core-overlay-toggle>Cancel</button>";
+        document.getElementById('popup').opened = true;
+      }
       if(document.getElementsByClassName('work-entry').length === 0) {
         $('#workExperience').addClass('hidden');
       }
@@ -144,6 +179,3 @@
   </body>
 </html>
 
-<!-- TODO: Incorporate this text -->
-<!-- <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div> -->
-            <!-- <div flex>-->

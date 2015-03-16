@@ -16,11 +16,11 @@ var HTMLheaderName = '<div id="name">%data%</div>';
 var HTMLheaderRole = '<div id="role">%data%</div>';
 
 // var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<core-tooltip><core-icon-button class="icons" src="images/iconPhoneTalk-128x128.png" onclick="window.open(&quot;tel:%data%&quot;);"></core-icon-button><div tip>%data%</div></core-tooltip><span flex></span>';
-var HTMLemail = '<core-tooltip><core-icon-button class="icons" src="images/iconEmailHand-128x128.png" onclick="window.open(&quot;mailto:%data%&quot;);"></core-icon-button><div tip>%data%</div></core-tooltip><span flex></span>';
-var HTMLlinkedin = '<core-tooltip><core-icon-button class="icons" src="images/iconLinkedinHand-128x128.png" onclick="window.open(&quot;http://github.com/%data%&quot;);"></core-icon-button><div tip>My LinkedIn</div></core-tooltip><span flex></span>';
-var HTMLgithub = '<core-tooltip><core-icon-button class="icons" src="images/iconGitHubHand-128x128.png" onclick="window.open(&quot;http://github.com/%data%&quot;);"></core-icon-button><div tip>My GitHub</div></core-tooltip><span flex></span>';
-var HTMLlocation = '<core-tooltip><core-icon-button class="icons" src="images/iconLocationHand-128x128.png"></core-icon-button><div tip>%data%</div></core-tooltip><span flex></span>';
+var HTMLmobile = '<core-tooltip><core-icon-button class="icons" src="images/iconPhoneTalk-128x128.png" onclick="togglePopup(&quot;Call this number?&quot;,&quot;%data%&quot;,&quot;images/iconPhoneTalk-128x128.png&quot;,&quot;tel:%data%&quot;)"></core-icon-button><div tip>%data%</div></core-tooltip><span flex></span>';
+var HTMLemail = '<core-tooltip><core-icon-button class="icons" src="images/iconEmailHand-128x128.png" onclick="togglePopup(&quot;Send a message?&quot;,&quot;%data%&quot;,&quot;images/iconEmailHand-128x128.png&quot;,&quot;mailto:%data%&quot;)"></core-icon-button><div tip>%data%</div></core-tooltip><span flex></span>';
+var HTMLlinkedin = '<core-tooltip><core-icon-button class="icons" src="images/iconLinkedinHand-128x128.png" onclick="togglePopup(&quot;Open my LinkedIn profile?&quot;,&quot;&quot;,&quot;images/iconLinkedinHand-128x128.png&quot;,&quot;%data%&quot;)"></core-icon-button><div tip>My LinkedIn</div></core-tooltip><span flex></span>';
+var HTMLgithub = '<core-tooltip><core-icon-button class="icons" src="images/iconGithubHand-128x128.png" onclick="togglePopup(&quot;Open my GitHub profile?&quot;,&quot;&quot;,&quot;images/iconGithubHand-128x128.png&quot;,&quot;http://github.com/%data%&quot;)"></core-icon-button><div tip>My GitHub</div></core-tooltip><span flex></span>';
+var HTMLlocation = '<core-tooltip><core-icon-button class="icons" src="images/iconLocationHand-128x128.png" onclick="togglePopup(&quot;That is where I live!&quot;,&quot;%data%&quot;,&quot;images/iconLocationHand-128x128.png&quot;,&quot;&quot;)"></core-icon-button><div tip>%data%</div></core-tooltip><span flex></span>';
 
 var HTMLbioPic = '<img id="bioPic" src="%data%">';
 var HTMLWelcomeMsg = '<p class="welcome-message">%data%</p>';
@@ -69,21 +69,21 @@ The International Name challenge in Lesson 2 where you'll create a function that
 */
 
 //Internationalize name (from lesson 2)
-function inName(name) {
+// function inName(name) {
   
-  name = name.trim().split(" ");
-  name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
-  name[1] = name[1].toUpperCase();
+//   name = name.trim().split(" ");
+//   name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
+//   name[1] = name[1].toUpperCase();
 
-  return name[0] + " " + name[1];
-};
+//   return name[0] + " " + name[1];
+// };
 
-$(document).ready(function() {
-  $('button').click(function() {
-    var iName = inName() || function(){};
-    $('#name').html(iName);  
-  });
-});
+// $(document).ready(function() {
+//   $('button').click(function() {
+//     var iName = inName() || function(){};
+//     $('#name').html(iName);  
+//   });
+// });
 
 /*
 The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
