@@ -36,6 +36,12 @@ bio.display = function() {
 	
 	$("#home").append(formattedWelcomeMsg);
 
+	$("#footerContacts").append(formattedMobile);
+	$("#footerContacts").append(formattedEmail);
+	$("#footerContacts").append(formattedLinkedin);
+	$("#footerContacts").append(formattedGithub);
+	$("#footerContacts").append(formattedLocation);
+
 	if(bio.skills.length > 0) {
 		
 		$("#home").append(HTMLskillsStart);

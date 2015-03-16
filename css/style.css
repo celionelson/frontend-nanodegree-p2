@@ -153,3 +153,42 @@ li {
   width: 100%;
   padding: 0 0 5% 0;
 }
+
+#letsConnect {
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  #letsConnect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #letsConnect {
+    margin-top: 10%;
+  }
+}
+
+.green {
+  background-color: #56ba89;
+}
+
+.purple-blue {
+  background-color: #526e9c;
+}
+
+.white-text {
+  color: white;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
