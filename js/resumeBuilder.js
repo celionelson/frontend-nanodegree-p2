@@ -178,6 +178,18 @@ var education = {
 			"school" : "Udacity",
 			"dates" : "2015",
 			"url" : "https://www.udacity.com/course/ud245-nd"
+		},
+		{
+			"title" : "Object-Oriented Javascript",
+			"school" : "Udacity",
+			"dates" : "2015",
+			"url" : "https://www.udacity.com/course/ud015"
+		},
+		{
+			"title" : "HTML5 Canvas",
+			"school" : "Udacity",
+			"dates" : "2015",
+			"url" : "https://www.udacity.com/course/ud292"
 		}
 	]
 };
@@ -252,7 +264,22 @@ var projects = {
 			"description" : "Provided with a design mockup as a PDF-file, I had to replicate that design in HTML and CSS. I developed a responsive website that displays images, descriptions and links.",
 			"url" : "https://github.com/celionelson/frontend-nanodegree-p1.git",
 			"img" : "images/img-p1.png"
+		},
+		{
+			"title" : "Front-End Web Dev Nanodegree - P2 Interactive Resume",
+			"dates" : "2015",
+			"description" : "You're looking at it right now! I had to write clean code and to apply my knowledge of variables, objects, JSON, functions and control flow to successfully solve the challenges. I also had the opportunity to play with the new polymer features.",
+			"url" : "https://github.com/celionelson/frontend-nanodegree-p2.git",
+			"img" : "images/img-p2.png"
+		},
+		{
+			"title" : "Front-End Web Dev Nanodegree - P3 Classic Arcade Game Clone",
+			"dates" : "2015",
+			"description" : "I was provided with visual assets and a game loop engine; using these tools I added a number of entities to the game including the player characters, gems and enemies to recreate the classic arcade game Frogger.",
+			"url" : "https://github.com/celionelson/frontend-nanodegree-p3.git",
+			"img" : "images/img-p3.png"
 		}
+
 	]
 };
 
