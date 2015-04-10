@@ -171,7 +171,7 @@
       function togglePopup(title,data,imgsrc,link) {
         document.getElementById('popupImg').src = imgsrc;
         document.getElementById('popupTitle').innerHTML = title+ "<br>" +data;
-        document.getElementById('popupButtons').innerHTML = "<button onclick='window.open(&quot;"+link+"&quot;);' core-overlay-toggle>Ok</button><button core-overlay-toggle>Cancel</button>";
+        document.getElementById('popupButtons').innerHTML = "<button onclick='window.open(&quot;"+link+"&quot;);' core-overlay-toggle>Ok</button>";
         document.getElementById('popup').opened = true;
       }
       if(document.getElementsByClassName('work-entry').length === 0) {
