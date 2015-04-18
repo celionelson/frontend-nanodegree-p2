@@ -20,7 +20,7 @@ var HTMLmobile = '<core-tooltip><core-icon-button class="icons" src="images/icon
 var HTMLemail = '<core-tooltip><core-icon-button class="icons" src="images/iconEmailHand-128x128.png" onclick="togglePopup(&quot;Send a message?&quot;,&quot;%data%&quot;,&quot;images/iconEmailHand-128x128.png&quot;,&quot;mailto:%data%&quot;)"></core-icon-button><div tip>%data%</div></core-tooltip><span flex></span>';
 var HTMLlinkedin = '<core-tooltip><core-icon-button class="icons" src="images/iconLinkedinHand-128x128.png" onclick="togglePopup(&quot;Open my LinkedIn profile?&quot;,&quot;&quot;,&quot;images/iconLinkedinHand-128x128.png&quot;,&quot;%data%&quot;)"></core-icon-button><div tip>My LinkedIn</div></core-tooltip><span flex></span>';
 var HTMLgithub = '<core-tooltip><core-icon-button class="icons" src="images/iconGitHubHand-128x128.png" onclick="togglePopup(&quot;Open my GitHub profile?&quot;,&quot;&quot;,&quot;images/iconGitHubHand-128x128.png&quot;,&quot;http://github.com/%data%&quot;)"></core-icon-button><div tip>My GitHub</div></core-tooltip><span flex></span>';
-var HTMLlocation = '<core-tooltip><core-icon-button class="icons" src="images/iconLocationHand-128x128.png" onclick="togglePopup(&quot;Location&quot;,&quot;%data%&quot;,&quot;images/iconLocationHand-128x128.png&quot;,null)"></core-icon-button><div tip>%data%</div></core-tooltip>';
+var HTMLlocation = '<core-tooltip><core-icon-button class="icons" src="images/iconLocationHand-128x128.png" onclick="togglePopup(&quot;Location :&quot;,&quot;%data%&quot;,&quot;images/iconLocationHand-128x128.png&quot;,null)"></core-icon-button><div tip>%data%</div></core-tooltip>';
 
 var HTMLbioPic = '<img id="bioPic" src="%data%">';
 var HTMLWelcomeMsg = '<p class="welcome-message">%data%</p>';
