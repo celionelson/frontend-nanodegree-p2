@@ -2,8 +2,8 @@ var bio = {
 	"name" : "Celio Nelson",
 	"role" : "Administrator / Project Manager / Learning Web Developer",
 	"contacts" : {
-		"mobile" : "+33647407660",
-		"email" : "celio.nelson@gmail.com",
+		"mobile" : "Phone number",
+		"email" : "email.address@fake.com",
 		"github" : "celionelson",
 		"linkedin" : "https://www.linkedin.com/pub/celio-nelson/54/689/4b0/fr",
 		"location" : "Washington, DC"},
