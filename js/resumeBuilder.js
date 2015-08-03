@@ -6,7 +6,7 @@ var bio = {
 		"email" : "celio.nelson@gmail.com",
 		"github" : "celionelson",
 		"linkedin" : "https://www.linkedin.com/pub/celio-nelson/54/689/4b0/fr",
-		"location" : "San Francisco, CA"},
+		"location" : "Washington, DC"},
 	"bioPic" : "images/bioPic2.png",
 	"welcomeMsg" : "Hi and Welcome on my 'Web Resume'!, <br> This webpage is my second project with Udacity's Front End Web Dev Nanodegree and I'm very excited about it!",
 	"skills" : ["project management", "administration", "logistics", "buildings automation", "programming"]
@@ -59,11 +59,19 @@ bio.display();
 var work = {
 	"jobs" : [
 		{
+			"employer" : "Média Espérance",
+			"title" : "Operations Support - Volunteer",
+			"dates" : "Sep 2014 to Jul 2015",
+			"location" : "Soulz Sous Forêts, France",
+			"description" : "Association promoting Christian and human values arising from the knowledge of God by editing and providing biblical communication media in French.<br>Provided support to the association’s Managing Director :<br>✔ Completely managed the IT material’s aging operating systems renewal and setup. Provided IT support on updates such as Microsoft Office 2013, Windows 7, OS X Yosemite, the Adobe Creative Suite, the accountability software (Ciel Associations), the database distribution software (Distriliv’).<br>✔ Stood in for the managing director during his 3 weeks vacations. Managed products orders and shipping as well as bills editing.<br>✔ Edited new products such as flyers, cards and newsletters using Adobe’s InDesign and Photoshop CS6.<br>✔ Maintained the association’s website with newsfeed and new products addition.",
+			"url" : ""
+		},
+		{
 			"employer" : "SFE",
 			"title" : "Administrator / Logistician",
 			"dates" : "Jul 2011 to Jun 2014",
 			"location" : "Thateng, Laos",
-			"description" : "Christian Swiss-French NGO working in Medical Cooperation and Rural Development in Laos.<br>Managed Administration, Finances, Human Resources and Logistics of a Community Agriculture Development Project employing 13 local staff.<br>Supported the project's field activities and Directed baseline and endline surveys in the poor villages.<br>More globally in the NGO, provided Administrative support to the Head Office, IT Support and Management. Implemented new management tools for expatriate staff administrative procedures.",
+			"description" : "Christian Swiss-French NGO working in Medical Cooperation and Rural Development in Laos.<br>✔ Managed Administration, Finances, Human Resources and Logistics of a Community Agriculture Development Project employing 13 local staff.<br>✔ Supported the project's field activities and Directed baseline and endline surveys in the poor villages.<br>✔ More globally in the NGO, provided Administrative support to the Head Office, IT Support and Management. Implemented new management tools for expatriate staff administrative procedures.",
 			"url" : ""
 		},
 		{
@@ -71,7 +79,7 @@ var work = {
 			"title" : "Key Account Manager / Team Leader",
 			"dates" : "May 2010 to May 2011",
 			"location" : "Geneva, Switzerland",
-			"description" : "Managed multiple Facility Management Accounts, which entailed Holding Customer Relations, Leading a team of 5 Site Managers, Handling the Sub-Contractors, Implementing changes or new accounts.<br>Carried out successfully the implementation of new Facility Management Services Accounts for a leading bank and a private client's luxury property.",
+			"description" : "✔ Managed multiple Facility Management Accounts, which entailed Holding Customer Relations, Leading a team of 5 Site Managers, Handling the Sub-Contractors, Implementing changes or new accounts.<br>✔ Carried out successfully the implementation of new Facility Management Services Accounts for a leading bank and a private client's luxury property.",
 			"url" : ""
 		},
 		{
@@ -79,7 +87,7 @@ var work = {
 			"title" : "Project Manager in Buildings Automation",
 			"dates" : "Jan 2008 to Apr 2010",
 			"location" : "Geneva, Switzerland",
-			"description" : "Managed Building Automation projects in HVAC from the Conception of the electrical schemes and the automatons' programs to the software commissioning of facilities (ventilation, heating, air-conditioning).<br>Initiated and achieved conception of powerful tools that led to save substantial amounts of time in the company's work process for projects.",
+			"description" : "✔ Managed Building Automation projects in HVAC from the Conception of the electrical schemes and the automatons' programs to the software commissioning of facilities (ventilation, heating, air-conditioning).<br>✔ Initiated and achieved conception of powerful tools that led to save substantial amounts of time in the company's work process for projects.",
 			"url" : ""
 		}
 	]
