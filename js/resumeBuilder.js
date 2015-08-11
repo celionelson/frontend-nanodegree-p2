@@ -198,6 +198,18 @@ var education = {
 			"school" : "Udacity",
 			"dates" : "2015",
 			"url" : "https://www.udacity.com/course/ud292"
+		},
+		{
+			"title" : "Website Performance Optimization",
+			"school" : "Udacity",
+			"dates" : "2015",
+			"url" : "https://www.udacity.com/course/ud884"
+		},
+		{
+			"title" : "Browser Rendering Optimization",
+			"school" : "Udacity",
+			"dates" : "2015",
+			"url" : "https://www.udacity.com/course/ud860"
 		}
 	]
 };
@@ -286,6 +298,13 @@ var projects = {
 			"description" : "I was provided with visual assets and a game loop engine; using these tools I added a number of entities to the game including the player characters, gems and enemies to recreate the classic arcade game Frogger.",
 			"url" : "https://github.com/celionelson/frontend-nanodegree-p3.git",
 			"img" : "images/img-p3.png"
+		},
+		{
+			"title" : "Front-End Web Dev Nanodegree - P4 Website Optimization",
+			"dates" : "2015",
+			"description" : "I optimized a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.",
+			"url" : "https://github.com/celionelson/frontend-nanodegree-p4.git",
+			"img" : "images/img-p4.png"
 		}
 
 	]
