@@ -270,7 +270,7 @@ var workView = {
 
 	render: function() {
 		
-		var work = getWorkData();
+		var work = octopus.getWorkData();
 
 		$("#navmenuContent").append(HTMLworkMenu);
 
@@ -305,7 +305,7 @@ var schoolView = {
 
 	render: function() {
 		
-		var education = getEducationData();
+		var education = octopus.getEducationData();
 
 		$("#navmenuContent").append(HTMLeducationMenu);
 
@@ -340,7 +340,7 @@ var onlineCoursesView = {
 
 	render: function() {
 
-		var education = getEducationData();
+		var education = octopus.getEducationData();
 
 		if(education.schools.length === 0) {
 			$("#navmenuContent").append(HTMLeducationMenu);
@@ -377,7 +377,7 @@ var projectsView = {
 
 	render: function() {
 
-		var projects = getProjectsData();
+		var projects = octopus.getProjectsData();
 
 		$("#navmenuContent").append(HTMLprojectMenu);
 
@@ -414,3 +414,5 @@ var otherView = {
 		$("#mapDiv").append(googleMap);
 	}
 };
+
+octopus.init();
