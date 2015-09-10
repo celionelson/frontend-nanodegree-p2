@@ -137,6 +137,12 @@ var model = {
 				"school" : "Udacity",
 				"dates" : "2015",
 				"url" : "https://www.udacity.com/course/ud860"
+			},
+			{
+				"title" : "JavaScript Design Patterns",
+				"school" : "Udacity",
+				"dates" : "2015",
+				"url" : "https://www.udacity.com/course/ud989"
 			}
 		]
 	},
