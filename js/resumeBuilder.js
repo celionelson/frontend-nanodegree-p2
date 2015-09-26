@@ -143,6 +143,12 @@ var model = {
 				"school" : "Udacity",
 				"dates" : "2015",
 				"url" : "https://www.udacity.com/course/ud989"
+			},
+			{
+				"title" : "JavaScript Testing",
+				"school" : "Udacity",
+				"dates" : "2015",
+				"url" : "https://www.udacity.com/course/ud549"
 			}
 		]
 	},
@@ -176,6 +182,20 @@ var model = {
 				"description" : "I optimized a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.",
 				"url" : "https://github.com/celionelson/frontend-nanodegree-p4.git",
 				"img" : "images/img-p4.png"
+			},
+			{
+				"title" : "Front-End Web Dev Nanodegree - P5 Neighborhood Map",
+				"dates" : "2015",
+				"description" : "I developed a single-page application featuring a map of Wilmington's neighborhood. I then added additional functionality to this application, including: map markers to identify diverse locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations. I then researched and implemented third-party APIs that provide additional information about each of these locations, such as StreetView images, Wikipedia articles.",
+				"url" : "https://github.com/celionelson/frontend-nanodegree-p5.git",
+				"img" : "images/img-p5.png"
+			},
+			{
+				"title" : "Front-End Web Dev Nanodegree - P6 Neighborhood Map",
+				"dates" : "2015",
+				"description" : "In this project I was given a web-based application that reads RSS feeds. The original (fake, for the purpose of this project) developer of this application clearly saw the value in testing, they've already included Jasmine and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. I then add to complete this test suite making sure it worked according to plan.",
+				"url" : "https://github.com/celionelson/frontend-nanodegree-p6.git",
+				"img" : "images/img-p6.png"
 			}
 		]
 	}		
