@@ -191,7 +191,7 @@ var model = {
 				"img" : "images/img-p5.png"
 			},
 			{
-				"title" : "Front-End Web Dev Nanodegree - P6 Neighborhood Map",
+				"title" : "Front-End Web Dev Nanodegree - P6 Feed Reader Testing",
 				"dates" : "2015",
 				"description" : "In this project I was given a web-based application that reads RSS feeds. The original (fake, for the purpose of this project) developer of this application clearly saw the value in testing, they've already included Jasmine and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. I then add to complete this test suite making sure it worked according to plan.",
 				"url" : "https://github.com/celionelson/frontend-nanodegree-p6.git",
