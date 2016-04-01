@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Celio Nelson's Resume</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jQuery.js"></script>
+    <script src="js/helper.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Polymer Project HTML Imports -->
+    <script 
+      src="/frontend-nanodegree-p2/bower_components/webcomponentsjs/webcomponents.min.js">
+    </script>
+    <link rel="import" 
+      href="/frontend-nanodegree-p2/bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import" 
+      href="/frontend-nanodegree-p2/bower_components/core-menu/core-menu.html">
+    <link rel="import" 
+      href="/frontend-nanodegree-p2/bower_components/core-item/core-item.html">
+    <link rel="import" 
+      href="/frontend-nanodegree-p2/bower_components/core-header-panel/core-header-panel.html">
+    <link rel="import" 
+      href="/frontend-nanodegree-p2/bower_components/core-drawer-panel/core-drawer-panel.html">
+    <link rel="import" 
+      href="/frontend-nanodegree-p2/bower_components/core-scaffold/core-scaffold.html">
+    <link rel="import" 
+      href="/frontend-nanodegree-p2/bower_components/core-image/core-image.html">
+    <link rel="import" 
+      href="/frontend-nanodegree-p2/bower_components/core-tooltip/core-tooltip.html">
+    <link rel="import" 
+      href="/frontend-nanodegree-p2/bower_components/core-overlay/core-overlay.html">
+    <link rel="import" 
+      href="/frontend-nanodegree-p2/bower_components/core-transition/core-transition.html">
+    <!-- ... -->
+
+    <!-- Fonts import -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400,300,700' rel='stylesheet' 
+    type='text/css'>
+    <!-- ... -->
+
+  </head>
+
+  <body unresolved>
+
+    <!-- Polymer side Nav -->
+
+    <core-scaffold mode="waterfall">
+
+      <core-header-panel navigation flex>
+
+        <core-toolbar id="navheader" class="medium-tall">
+
+          <div id="navheaderTopContent" horizontal center-justified layout 
+            class="top">
+
+            <!-- content -->
+          
+          </div>
+
+          <div id="navheaderBottomContent" horizontal center-justified layout 
+            class="bottom">
+            
+            <!-- content -->
+
+          </div>
+
+        </core-toolbar>
+
+        <core-menu id="navmenuContent">
+
+          <!-- content -->
+          
+        </core-menu>
+
+      </core-header-panel>
+      
+      <div id="mainheaderContent" tool>
+        
+        <!-- content -->
+        
+      </div>
+
+      <div class="content">
+
+        <div id="home" class="main">
+
+          <!-- content -->
+
+        </div>
+
+        <div id="workExperience" class="main gray">
+        
+          <h1>Work Experience</h1>
+        
+          <!-- content -->
+
+        </div>
+        
+        <div id="projects" class="main">
+        
+          <h1>Projects</h1>
+
+          <!-- content -->
+        
+        </div>
+        
+        <div id="education" class="main gray">
+        
+          <h1>Education</h1>
+
+          <!-- content -->
+        
+        </div>
+        
+        <div id="mapDiv" class="main">
+        
+          <h1>Where I've Lived and Worked</h1>
+
+          <!-- content -->
+        
+        </div>
+
+        <div id="letsConnect" class='purple-blue'>
+
+          <h1 class="white-text">Let's Connect</h2>
+          
+          <div id="footerContacts" class="flex-box green">
+          
+            <!-- content -->
+
+          </div>
+        
+        </div>
+  
+      </div>
+
+    </core-scaffold>
+
+    <core-overlay id="popup" class="dialog" backdrop transition="core-transition-top">
+
+        <core-image id="popupImg" horizontal center-justified layout src="">
+          </core-image>
+
+        <h2 id="popupTitle" horizontal center-justified layout>
+
+          <!-- Content added by function togglePopup() -->
+
+        </h2>
+        
+        <br>
+
+        <div id="popupButtons" horizontal around-justified layout>
+
+          <!-- Content added by function togglePopup() -->
+
+        </div>
+
+        <br>
+      
+        <div class="authors" horizontal center-justified layout>
+          <a href="http://www.flaticon.com/authors/freepik">Icons made by Freepik</a>
+        </div>
+
+    </core-overlay>
+
+    <script src="js/resumeBuilder.js"></script>
+
+    <script type="text/javascript">
+      function togglePopup(title,data,imgsrc,link) {
+        document.getElementById('popupImg').src = imgsrc;
+        document.getElementById('popupTitle').innerHTML = title+ "<br>" +data;
+        if (link != null) {
+          document.getElementById('popupButtons').innerHTML = "<button onclick='window.open(&quot;"+link+"&quot;);' core-overlay-toggle>Ok</button>";
+        };
+        document.getElementById('popup').opened = true;
+      }
+      if(document.getElementsByClassName('work-entry').length === 0) {
+        $('#workExperience').addClass('hidden');
+      }
+      if(document.getElementsByClassName('project-entry').length === 0) {
+        $('#projects').addClass('hidden');
+      }
+      if(document.getElementsByClassName('education-entry').length === 0) {
+        $('#education').addClass('hidden');
+      }
+      if(document.getElementById('map') === null) {
+        $('#mapDiv').addClass('hidden');
+      }
+    </script>
+
+  </body>
+</html>
+
